@@ -95,12 +95,12 @@ main{
                          "imagen1 imagen2 imagen3 imagen4"
                          "imagen1 imagen2 imagen3 imagen4";
     gap: 1rem;
-    justify-items: center;
-    
+    justify-items: space-evenly;  
 }
 
 main .introduccion{
     border: 2px solid;
+    margin: auto;
     font-size: 1rem;
     grid-area: descripcion;
 
