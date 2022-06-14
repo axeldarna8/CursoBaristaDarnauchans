@@ -94,11 +94,12 @@ main{
                          "descripcion descripcion descripcion fechas"
                          "imagen1 imagen2 imagen3 imagen4"
                          "imagen1 imagen2 imagen3 imagen4";
-    gap: 0rem;
-    justify-content: end;
+    gap: 1rem;
+    justify-items: center;
+    
 }
 
-main div .introduccion{
+main .introduccion{
     border: 2px solid;
     font-size: 1rem;
     grid-area: descripcion;
@@ -200,33 +201,3 @@ footer{
     }
 }
 
-@media screen and (min-width:1024px){
-    .paginaprincipal{
-        display: grid;
-        grid-template-areas: "descripcion descripcion descripcion fechas"
-                             "descripcion descripcion descripcion fechas"
-                             "descripcion descripcion descripcion fechas"
-                             "descripcion descripcion descripcion fechas"
-                             "imagen1 imagen2 imagen3 imagen4";
-        gap: 1rem;
-        justify-items: center;
-        justify-content: center;
-    }
-    main .fechas{
-        border: 2px solid;
-        font-size: 1.5rem;
-        grid-area: fechas;
-        display: block;
-    }
-
-    h2{
-        margin: auto;
-        width: 8%;
-        margin-top: 8%;
-        margin-bottom: 1%;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-        border: 2px solid;
-        border-radius: 0.8rem;
-    }
-}
