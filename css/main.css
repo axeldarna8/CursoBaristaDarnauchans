@@ -1,0 +1,232 @@
+/* reset a todos los estilos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* centrado del titulo e imagen mas color de fondo */
+header{
+    background: rgb(246,230,139);
+    background: linear-gradient(90deg, rgba(246,230,139,1) 2%, rgba(171,157,79,1) 92%);
+}
+
+header .portada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    font-family: 'Yellowtail', cursive;
+    font-size: 1.5rem;
+    gap: 3rem;
+}
+
+header .portada h1{
+    text-align: center;
+}
+
+
+
+/* centrado del menu con su respectiva caja contenedora */
+h2{
+    margin: auto;
+    width: 8%;
+    margin-top: 8%;
+    margin-bottom: 1%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    border: 0.15rem solid;
+    border-radius: 0.8rem;
+}
+
+header .menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .menu ul li{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding-left: 1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header .menu ul li:hover{
+    box-shadow: 5px 10px 10px  rgb(93, 91, 91);
+}
+.linkMenu{
+    color: black;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+header nav ul{
+    justify-content: center;
+    border: 0.15rem solid;
+    border-radius: 3rem;
+    margin: auto;
+    width: 36%;
+    padding-top: 1%;
+    display: block;
+}
+/* Color del main como centralizacion del texto*/
+main{
+    background: rgb(246,230,139);
+    background: linear-gradient(90deg, rgba(246,230,139,1) 2%, rgba(171,157,79,1) 92%);
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 20px;
+    padding-bottom: auto;
+}
+
+.paginanosotros{
+    padding-bottom: 100px;
+}
+
+.paginaprincipal{
+    display: grid;
+    grid-template-areas: "descripcion descripcion descripcion fechas"
+                         "descripcion descripcion descripcion fechas"
+                         "descripcion descripcion descripcion fechas"
+                         "descripcion descripcion descripcion fechas"
+                         "imagen1 imagen2 imagen3 imagen4"
+                         "imagen1 imagen2 imagen3 imagen4";
+    gap: 0rem;
+    justify-content: end;
+}
+
+main div .introduccion{
+    border: 2px solid;
+    font-size: 1rem;
+    grid-area: descripcion;
+
+}
+
+main .fechas{
+    border: 2px solid;
+    grid-area: fechas;
+}
+
+main .fechas p{
+    font-size: 1rem;
+}
+
+
+main .imagenes1{
+    grid-area: imagen1;
+}
+
+main .imagenes2{
+    grid-area: imagen2;
+}
+
+main .imagenes3{
+    grid-area: imagen3;
+}
+
+main .imagenes4{
+    grid-area: imagen4;
+}
+
+/* Ajuste de dimensiones de la forma ademas de centralizacion*/
+main form{
+    padding-top: 20px;
+    padding-bottom: 300px;
+}
+main form fieldset .mensajeforma{
+    padding-bottom: 100px;
+    overflow-y: auto;
+}
+
+/*Utilizacion de Lorem como referencia, en el futuro hay que cambiar tanto el color de la imagen de fondo para el contraste con la letra como el texto del mismo*/
+main div .parrafo{
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 450px;
+    padding-right: 450px;
+}
+
+/*Color y ajuste del footer*/
+.volverArriba{
+    color: black;
+}
+footer{
+    background: rgb(246,230,139);
+    background: linear-gradient(90deg, rgba(246,230,139,1) 2%, rgba(171,157,79,1) 92%);
+    padding-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+
+    .paginaprincipal{
+        display: grid;
+        grid-template-areas: "descripcion descripcion"
+                             "descripcion descripcion"
+                             "descripcion descripcion"
+                             "descripcion descripcion"
+                             "imagen1 imagen2"
+                             "imagen1 imagen2"
+                             "imagen3 imagen4"
+                             "imagen3 imagen4";    
+        gap: 5px;  
+         
+        
+    }
+    
+
+    main div .introduccion{
+        grid-area: descripcion;
+        justify-content: center;
+    }
+
+    main .fechas{
+        display: none;
+    }
+
+    h2{
+        margin: auto;
+        width: 20%;
+        margin-top: 8%;
+        margin-bottom: 1%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        border: 2px solid;
+        border-radius: 0.8rem;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .paginaprincipal{
+        display: grid;
+        grid-template-areas: "descripcion descripcion descripcion fechas"
+                             "descripcion descripcion descripcion fechas"
+                             "descripcion descripcion descripcion fechas"
+                             "descripcion descripcion descripcion fechas"
+                             "imagen1 imagen2 imagen3 imagen4";
+        gap: 1rem;
+        justify-items: center;
+        justify-content: center;
+    }
+    main .fechas{
+        border: 2px solid;
+        font-size: 1.5rem;
+        grid-area: fechas;
+        display: block;
+    }
+
+    h2{
+        margin: auto;
+        width: 8%;
+        margin-top: 8%;
+        margin-bottom: 1%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        border: 2px solid;
+        border-radius: 0.8rem;
+    }
+}
