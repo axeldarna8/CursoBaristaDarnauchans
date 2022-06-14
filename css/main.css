@@ -56,6 +56,8 @@ header .menu ul li{
 
 header .menu ul li:hover{
     box-shadow: 5px 10px 10px  rgb(93, 91, 91);
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 .linkMenu{
     color: black;
@@ -95,7 +97,7 @@ main{
                          "imagen1 imagen2 imagen3 imagen4"
                          "imagen1 imagen2 imagen3 imagen4";
     gap: 1rem;
-    justify-items: space-evenly;  
+    justify-content: space-evenly;  
 }
 
 main .introduccion{
@@ -103,12 +105,15 @@ main .introduccion{
     margin: auto;
     font-size: 1rem;
     grid-area: descripcion;
-
+    margin-bottom: 10rem;
+    margin-top: 10rem;
 }
 
 main .fechas{
     border: 2px solid;
     grid-area: fechas;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
 }
 
 main .fechas p{
@@ -116,20 +121,28 @@ main .fechas p{
 }
 
 
-main .imagenes1{
+main .imagenes1:hover{
     grid-area: imagen1;
+    transform: scale(1.3);
+    transition: 1s;
 }
 
-main .imagenes2{
+main .imagenes2:hover{
     grid-area: imagen2;
+    transform: scale(1.3);
+    transition: 1s;
 }
 
-main .imagenes3{
+main .imagenes3:hover{
     grid-area: imagen3;
+    transform: scale(1.3);
+    transition: 1s;
 }
 
-main .imagenes4{
+main .imagenes4:hover{
     grid-area: imagen4;
+    transform: scale(1.3);
+    transition: 1s;
 }
 
 /* Ajuste de dimensiones de la forma ademas de centralizacion*/
