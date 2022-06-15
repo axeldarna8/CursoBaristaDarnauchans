@@ -4,6 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background: rgb(246,230,139);
+    background: linear-gradient(90deg, rgba(246,230,139,1) 2%, rgba(171,157,79,1) 92%);
+}
+
 /* centrado del titulo e imagen mas color de fondo */
 header{
     background: rgb(246,230,139);
@@ -100,6 +106,10 @@ main{
     justify-content: space-evenly;  
 }
 
+#carouselExampleControls{
+    display: none;
+}
+
 main .introduccion{
     border: 2px solid;
     margin: auto;
@@ -121,29 +131,7 @@ main .fechas p{
 }
 
 
-main .imagenes1:hover{
-    grid-area: imagen1;
-    transform: scale(1.3);
-    transition: 1s;
-}
 
-main .imagenes2:hover{
-    grid-area: imagen2;
-    transform: scale(1.3);
-    transition: 1s;
-}
-
-main .imagenes3:hover{
-    grid-area: imagen3;
-    transform: scale(1.3);
-    transition: 1s;
-}
-
-main .imagenes4:hover{
-    grid-area: imagen4;
-    transform: scale(1.3);
-    transition: 1s;
-}
 
 /* Ajuste de dimensiones de la forma ademas de centralizacion*/
 main form{
@@ -158,9 +146,6 @@ main form fieldset .mensajeforma{
 /*Utilizacion de Lorem como referencia, en el futuro hay que cambiar tanto el color de la imagen de fondo para el contraste con la letra como el texto del mismo*/
 main div .parrafo{
     text-align: center;
-    padding-top: 40px;
-    padding-left: 450px;
-    padding-right: 450px;
 }
 
 /*Color y ajuste del footer*/
@@ -171,6 +156,7 @@ footer{
     background: rgb(246,230,139);
     background: linear-gradient(90deg, rgba(246,230,139,1) 2%, rgba(171,157,79,1) 92%);
     padding-left: 20px;
+    margin-top: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
@@ -179,19 +165,30 @@ footer{
 
     .paginaprincipal{
         display: grid;
-        grid-template-areas: "descripcion descripcion"
-                             "descripcion descripcion"
-                             "descripcion descripcion"
-                             "descripcion descripcion"
-                             "imagen1 imagen2"
-                             "imagen1 imagen2"
-                             "imagen3 imagen4"
-                             "imagen3 imagen4";    
-        gap: 5px;  
-         
-        
+        grid-template-areas: "descripcion"
+                             "descripcion";    
+        gap: 5px;    
     }
     
+    main .imagenes1{
+        display: none;
+    }
+
+    main .imagenes2{
+        display: none;
+    }
+
+    main .imagenes3{
+        display: none;
+    }
+
+    main .imagenes4{
+        display: none;
+    }
+
+    #carouselExampleControls{
+        display: block;
+    }
 
     main div .introduccion{
         grid-area: descripcion;
@@ -214,3 +211,29 @@ footer{
     }
 }
 
+@media screen and (min-width: 1024px){
+
+    main .imagenes1:hover{
+        grid-area: imagen1;
+        transform: scale(1.3);
+        transition: 1s;
+    }
+    
+    main .imagenes2:hover{
+        grid-area: imagen2;
+        transform: scale(1.3);
+        transition: 1s;
+    }
+    
+    main .imagenes3:hover{
+        grid-area: imagen3;
+        transform: scale(1.3);
+        transition: 1s;
+    }
+    
+    main .imagenes4:hover{
+        grid-area: imagen4;
+        transform: scale(1.3);
+        transition: 1s;
+    }
+}
