@@ -91,7 +91,15 @@ main{
 }
 
 .paginanosotros{
-    padding-bottom: 100px;
+    padding-bottom: 3rem;
+}
+
+.paginanosotros div .cajatexto{
+    margin: 3rem;
+}
+.paginanosotros div .cajatexto .parrafo{
+    font-size: 1rem;
+    text-align: justify;
 }
 
 .paginaprincipal{
@@ -236,4 +244,10 @@ footer{
         transform: scale(1.3);
         transition: 1s;
     }
+
+    .paginanosotros div .cajatexto .parrafo{
+        font-size: 2rem;
+        text-align: justify;
+    }
+
 }
