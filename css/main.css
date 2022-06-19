@@ -5,16 +5,14 @@
     box-sizing: border-box;
 }
 
+/* color de fondo */
+
 body{
     background: rgb(246,230,139);
     background: linear-gradient(90deg, rgba(246,230,139,1) 2%, rgba(171,157,79,1) 92%);
 }
 
-/* centrado del titulo e imagen mas color de fondo */
-header{
-    background: rgb(246,230,139);
-    background: linear-gradient(90deg, rgba(246,230,139,1) 2%, rgba(171,157,79,1) 92%);
-}
+/* centrado del titulo e imagen */
 
 header .portada{
     display: flex;
@@ -23,7 +21,11 @@ header .portada{
     padding-top: 4rem;
     font-family: 'Yellowtail', cursive;
     font-size: 1.5rem;
-    gap: 3rem;
+    gap: 2rem;
+}
+
+header .portada .imagenportada{
+    border-radius: 80%;
 }
 
 header .portada h1{
@@ -33,16 +35,6 @@ header .portada h1{
 
 
 /* centrado del menu con su respectiva caja contenedora */
-h2{
-    margin: auto;
-    width: 8%;
-    margin-top: 8%;
-    margin-bottom: 1%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    border: 0.15rem solid;
-    border-radius: 0.8rem;
-}
 
 header .menu ul{
     display: flex;
@@ -170,6 +162,10 @@ footer{
 }
 
 @media screen and (max-width: 768px){
+
+    header .portada .imagenportada{
+        margin-right: 5%;
+    }
 
     .paginaprincipal{
         display: grid;
