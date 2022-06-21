@@ -36,6 +36,9 @@ header .portada h1{
 
 /* centrado del menu con su respectiva caja contenedora */
 
+header .cajamenu .navbar .itemsmenu{
+}
+
 
 /* Color del main como centralizacion del texto*/
 main{
@@ -181,6 +184,12 @@ footer{
 }
 
 @media screen and (min-width: 1024px){
+
+    header .cajamenu .navbar .itemsmenu .linkmenu{
+        display: none;
+    }
+    
+    
 
     main .imagenes1:hover{
         grid-area: imagen1;
