@@ -36,9 +36,6 @@ header .portada h1{
 
 /* centrado del menu con su respectiva caja contenedora */
 
-header .cajamenu .navbar .itemsmenu{
-}
-
 
 /* Color del main como centralizacion del texto*/
 main{
@@ -49,6 +46,8 @@ main{
     padding-top: 20px;
     padding-bottom: auto;
 }
+
+/* Nosotros page */
 
 .paginanosotros{
     padding-bottom: 3rem;
@@ -61,6 +60,8 @@ main{
     font-size: 1rem;
     text-align: justify;
 }
+
+/* Main page */
 
 .paginaprincipal{
     display: grid;
@@ -78,7 +79,7 @@ main{
     display: none;
 }
 
-main .introduccion{
+.paginaprincipal .introduccion{
     border: 2px solid;
     margin: auto;
     font-size: 1rem;
@@ -87,14 +88,14 @@ main .introduccion{
     margin-top: 10rem;
 }
 
-main .fechas{
+.paginaprincipal .fechas{
     border: 2px solid;
     grid-area: fechas;
     margin-bottom: 10rem;
     margin-top: 10rem;
 }
 
-main .fechas p{
+.paginaprincipal .fechas p{
     font-size: 1rem;
 }
 
@@ -137,11 +138,15 @@ footer{
 
     .paginaprincipal{
         display: grid;
-        grid-template-areas: "descripcion"
-                             "descripcion";    
+        grid-template-areas: "descripcion";    
         gap: 5px;    
     }
     
+    .paginaprincipal .introduccion p{
+        margin: 4rem;
+    }
+
+
     main .imagenes1{
         display: none;
     }
@@ -162,12 +167,12 @@ footer{
         display: block;
     }
 
-    main div .introduccion{
+    .paginaprincipal div .introduccion{
         grid-area: descripcion;
         justify-content: center;
     }
 
-    main .fechas{
+    .paginaprincipal .fechas{
         display: none;
     }
 
@@ -188,28 +193,27 @@ footer{
     header .cajamenu .navbar .itemsmenu .linkmenu{
         display: none;
     }
-    
-    
 
-    main .imagenes1:hover{
+
+    .paginaprincipal .imagenes1:hover{
         grid-area: imagen1;
         transform: scale(1.3);
         transition: 1s;
     }
     
-    main .imagenes2:hover{
+    .paginaprincipal .imagenes2:hover{
         grid-area: imagen2;
         transform: scale(1.3);
         transition: 1s;
     }
     
-    main .imagenes3:hover{
+    .paginaprincipal .imagenes3:hover{
         grid-area: imagen3;
         transform: scale(1.3);
         transition: 1s;
     }
     
-    main .imagenes4:hover{
+    .paginaprincipal .imagenes4:hover{
         grid-area: imagen4;
         transform: scale(1.3);
         transition: 1s;
