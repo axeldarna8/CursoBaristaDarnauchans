@@ -10,10 +10,22 @@
 $color-principal1: rgb(246,230,139);
 $color-principal2: rgb(171,157,79);
 
+/* color fondo */
+
 body{
     background: $color-principal1;
     background: linear-gradient(90deg, $color-principal1 2%, $color-principal2 92%);
 }
+
+/* Mixins */
+
+@mixin flex-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+}
+
+/* imagen de portada */
 
 header{
     .portada{
@@ -33,16 +45,13 @@ header{
     }
 }
 
-/* Main page */
+/* Inicio page */
 
-main{
+.paginaprincipal{
     text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-top: 20px;
     padding-bottom: auto;
-}
-
-.paginaprincipal{
     display: grid;
     grid-template-areas: "descripcion descripcion descripcion fechas"
                          "descripcion descripcion descripcion fechas"
@@ -90,7 +99,8 @@ main{
     text-align: justify;
 }
 
-/* Ajuste de dimensiones de la forma ademas de centralizacion*/
+/* Contacto page */
+
 main form{
     padding-top: 20px;
     padding-bottom: 300px;
@@ -100,23 +110,25 @@ main form fieldset .mensajeforma{
     overflow-y: auto;
 }
 
-/*Utilizacion de Lorem como referencia, en el futuro hay que cambiar tanto el color de la imagen de fondo para el contraste con la letra como el texto del mismo*/
-main div .parrafo{
-    text-align: center;
+/* Conoce mas page */
+
+.conocemasmain div{
+    @include flex-row-center;
 }
 
 /*Color y ajuste del footer*/
+
 .volverArriba{
     color: black;
 }
 footer{
-    background: rgb(246,230,139);
-    background: linear-gradient(90deg, rgba(246,230,139,1) 2%, rgba(171,157,79,1) 92%);
     padding-left: 20px;
     margin-top: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
+
+/* Version celular */
 
 @media screen and (max-width: 768px){
     header{
@@ -167,6 +179,8 @@ footer{
         border-radius: 0.8rem;
     }
 }
+
+/* Version PC */
 
 @media screen and (min-width: 1024px){
     header{

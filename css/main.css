@@ -4,10 +4,13 @@
   padding: 0;
   box-sizing: border-box; }
 
+/* color fondo */
 body {
   background: #f6e68b;
   background: linear-gradient(90deg, #f6e68b 2%, #ab9d4f 92%); }
 
+/* Mixins */
+/* imagen de portada */
 header .portada {
   display: flex;
   justify-content: center;
@@ -21,14 +24,12 @@ header .portada {
   header .portada h1 {
     text-align: center; }
 
-/* Main page */
-main {
+/* Inicio page */
+.paginaprincipal {
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding-top: 20px;
-  padding-bottom: auto; }
-
-.paginaprincipal {
+  padding-bottom: auto;
   display: grid;
   grid-template-areas: "descripcion descripcion descripcion fechas" "descripcion descripcion descripcion fechas" "descripcion descripcion descripcion fechas" "descripcion descripcion descripcion fechas" "imagen1 imagen2 imagen3 imagen4" "imagen1 imagen2 imagen3 imagen4";
   gap: 1rem;
@@ -62,7 +63,7 @@ main {
   font-size: 1rem;
   text-align: justify; }
 
-/* Ajuste de dimensiones de la forma ademas de centralizacion*/
+/* Contacto page */
 main form {
   padding-top: 20px;
   padding-bottom: 300px; }
@@ -71,22 +72,23 @@ main form fieldset .mensajeforma {
   padding-bottom: 100px;
   overflow-y: auto; }
 
-/*Utilizacion de Lorem como referencia, en el futuro hay que cambiar tanto el color de la imagen de fondo para el contraste con la letra como el texto del mismo*/
-main div .parrafo {
-  text-align: center; }
+/* Conoce mas page */
+.conocemasmain div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 /*Color y ajuste del footer*/
 .volverArriba {
   color: black; }
 
 footer {
-  background: #f6e68b;
-  background: linear-gradient(90deg, #f6e68b 2%, #ab9d4f 92%);
   padding-left: 20px;
   margin-top: 30px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center; }
 
+/* Version celular */
 @media screen and (max-width: 768px) {
   header .portada .imagenportada {
     margin-right: 5%; }
@@ -118,6 +120,7 @@ footer {
     border: 2px solid;
     border-radius: 0.8rem; } }
 
+/* Version PC */
 @media screen and (min-width: 1024px) {
   header .cajamenu .navbar .itemsmenu .linkmenu {
     display: none; }
