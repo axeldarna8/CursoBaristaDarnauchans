@@ -37,15 +37,14 @@ header .portada {
     grid-area: descripcion;
     margin-bottom: 7rem;
     margin-top: 7rem; }
-
-#carouselExampleControls {
-  display: none; }
+  .paginaprincipal #carouselExampleControls {
+    display: none; }
 
 /* Producto Page */
 .productomain .imagenesproducto {
   display: flex;
   margin: 1rem;
-  justify-content: center;
+  justify-content: space-around;
   gap: 1rem;
   flex-wrap: wrap; }
 
@@ -106,10 +105,11 @@ footer {
     grid-template-areas: "descripcion";
     gap: 5px; }
     .paginaprincipal .introduccion {
-      margin-top: 4rem;
-      margin-bottom: 7rem; }
+      margin: 4rem 1rem 7rem 1rem; }
     .paginaprincipal .fechas {
       display: none; }
+    .paginaprincipal #carouselExampleControls {
+      display: block; }
   main .imagenes1 {
     display: none; }
   main .imagenes2 {
@@ -118,8 +118,6 @@ footer {
     display: none; }
   main .imagenes4 {
     display: none; }
-  #carouselExampleControls {
-    display: block; }
   h2 {
     margin: auto;
     width: 20%;
