@@ -9,6 +9,7 @@
 
 $color-principal1: rgb(246,230,139);
 $color-principal2: rgb(171,157,79);
+$color-menu-barra: #d2b617;
 
 /* color fondo */
 
@@ -49,34 +50,20 @@ header{
 
 .paginaprincipal{
     text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-top: 20px;
-    padding-bottom: auto;
+    font-family: 'Nanum Gothic', sans-serif;
     display: grid;
-    grid-template-areas: "descripcion descripcion descripcion fechas"
-                         "descripcion descripcion descripcion fechas"
-                         "descripcion descripcion descripcion fechas"
-                         "descripcion descripcion descripcion fechas"
+    grid-template-areas: "descripcion descripcion descripcion descripcion"
+                         "descripcion descripcion descripcion descripcion"
+                         "descripcion descripcion descripcion descripcion"
                          "imagen1 imagen2 imagen3 imagen4"
                          "imagen1 imagen2 imagen3 imagen4";
     gap: 1rem;
     justify-content: space-evenly;
     .introduccion{
-        border: 2px solid;
-        margin: auto;
-        font-size: 1rem;
+        font-size: 1.2rem;
         grid-area: descripcion;
-        margin-bottom: 10rem;
-        margin-top: 10rem;
-    }
-    .fechas{
-        border: 2px solid;
-        grid-area: fechas;
-        margin-bottom: 10rem;
-        margin-top: 10rem;
-        p{
-            font-size: 1rem;
-        }
+        margin-bottom: 7rem;
+        margin-top: 7rem;
     }
 }
 
@@ -93,6 +80,7 @@ header{
         .cajatexto{
             margin: 3rem;
             align-items: center;
+            font-family: 'Nanum Gothic', sans-serif;
             .parrafo{
                 font-size: 1rem; 
                 text-align: justify;
@@ -106,7 +94,7 @@ header{
 .contactomain .formacontacto{
     margin: 5rem;
     text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
     fieldset{
         display: flex;
         flex-direction: column;
@@ -119,7 +107,7 @@ header{
 
 .conocemasmain div{
     @include flex-column-center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
     justify-content:left;
     padding-top: 20px;
     padding-bottom: auto;
@@ -164,9 +152,8 @@ footer{
         grid-template-areas: "descripcion";    
         gap: 5px; 
         .introduccion{
-            p{
-                margin: 4rem; 
-            }
+            margin-top: 4rem;
+            margin-bottom: 7rem;
         } 
         .fechas{
             display: none; 
