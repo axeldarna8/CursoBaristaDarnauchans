@@ -62,39 +62,23 @@
         </div>
     </header>
     <main class="contactomain">
-        <form action="" class="formacontacto">
-            <fieldset>
-                <legend>Contactenos</legend>
-                <div>
-                    <label for="nombre">
-                        Nombre
-                    </label>
-                    <input type="text" name="nombre" placeholder="Nombre">
-                </div>
-                <div>
-                    <label for="Apellido">
-                        Apellido
-                    </label>
-                    <input type="text" name="apellido" placeholder="Apellido">
-                </div>
-                <div>
-                    <label for="email">
-                        Email 
-                    </label>
-                    <input type="email" name="email" placeholder="Email">
-                </div>
-                <div>
-                    <label for="mensaje">
-                        Mensaje
-                    </label>
-                    <input type="text" name="mensaje" placeholder="Tu consulta" class="mensajeforma">
-                </div>
-                <div>
-                    <input type="submit">
-                    <input type="reset">
-                </div>
-            </fieldset>
-        </form>
+        <div class="formacontacto col-5">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@dominio.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-outline-dark" type="submit">Enviar</button>
+                <input class="btn btn-outline-dark" type="reset" value="Reset">
+            </div>
+        </div>
+        <div class="mapacontacto col-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.4839693836407!2d-56.12359668255613!3d-34.8943023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f8131c39b5087%3A0xe4e96221c996c7f6!2sC%20Lallemand%201510%2C%2011400%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses!2suy!4v1657566264062!5m2!1ses!2suy" class="mapita" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>        
     </main>
     <footer>
         <a href="#arriba" class="volverArriba">
