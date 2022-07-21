@@ -22,8 +22,7 @@ body{
 
 @mixin flex-column-center{
     display: flex;
-    flex-direction: column;
-    margin: 2rem;  
+    flex-direction: column;  
 }
 
 /* imagen de portada */
@@ -123,27 +122,48 @@ header{
 .conocemasmain div{
     @include flex-column-center;
     font-family: 'Nanum Gothic', sans-serif;
-    justify-content:space-between;
+    justify-content:center;
     padding-top: 20px;
     padding-bottom: auto;
     .informacioncursos{
         @extend .conocemasmain;
+        font-weight: bold;
         flex-direction: row;
         margin-top: 8rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
         background-color: $color-principal2;
-        a{
-            text-decoration: none;
-            color: black;
+        text-align: center;
+    }
+    .acordeonconocemas1{
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top: -1.4rem;
+        .acordeoncurso1{
+            background-color: $color-principal2;
+        }
+        .acordeoncurso2{
+            @extend .acordeoncurso1;
+        }
+        .acordeoncurso3{
+            @extend .acordeoncurso1;
         }
     }
     .fechascursos{
         @extend .conocemasmain;
+        font-weight: bold;
         flex-direction: row;
-        margin-bottom: 8rem;
+        margin-top: 5rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
         background-color: $color-principal1;
-        a{
-            text-decoration: none;
-            color: black;
+    }
+    .acordeonconocemas2{
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top: -1.2rem;
+        .acordeoncurso1{
+
         }
     }
 }

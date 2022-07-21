@@ -74,25 +74,35 @@ header .portada {
 .conocemasmain div, .conocemasmain div .informacioncursos div, .conocemasmain div .fechascursos div {
   display: flex;
   flex-direction: column;
-  margin: 2rem;
   font-family: 'Nanum Gothic', sans-serif;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 20px;
   padding-bottom: auto; }
   .conocemasmain div .informacioncursos {
+    font-weight: bold;
     flex-direction: row;
     margin-top: 8rem;
-    background-color: #ab9d4f; }
-    .conocemasmain div .informacioncursos a {
-      text-decoration: none;
-      color: black; }
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background-color: #ab9d4f;
+    text-align: center; }
+  .conocemasmain div .acordeonconocemas1 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: -1.4rem; }
+    .conocemasmain div .acordeonconocemas1 .acordeoncurso1, .conocemasmain div .acordeonconocemas1 .acordeoncurso2, .conocemasmain div .acordeonconocemas1 .acordeoncurso3 {
+      background-color: #ab9d4f; }
   .conocemasmain div .fechascursos {
+    font-weight: bold;
     flex-direction: row;
-    margin-bottom: 8rem;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
     background-color: #f6e68b; }
-    .conocemasmain div .fechascursos a {
-      text-decoration: none;
-      color: black; }
+  .conocemasmain div .acordeonconocemas2 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: -1.2rem; }
 
 /*Color y ajuste del footer*/
 .volverArriba {
