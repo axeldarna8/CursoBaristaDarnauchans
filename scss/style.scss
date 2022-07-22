@@ -123,8 +123,8 @@ header{
     @include flex-column-center;
     font-family: 'Nanum Gothic', sans-serif;
     justify-content:center;
-    padding-top: 20px;
-    padding-bottom: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     .informacioncursos{
         @extend .conocemasmain;
         font-weight: bold;
@@ -141,6 +141,12 @@ header{
         margin-top: -1.4rem;
         .acordeoncurso1{
             background-color: $color-principal2;
+            h2{
+                .boton1{
+                    background-color: $color-principal1;
+                    font-weight: bold
+                }
+            }
         }
         .acordeoncurso2{
             @extend .acordeoncurso1;
@@ -149,6 +155,8 @@ header{
             @extend .acordeoncurso1;
         }
     }
+
+
     .fechascursos{
         @extend .conocemasmain;
         font-weight: bold;
@@ -162,8 +170,20 @@ header{
         margin-left: 3rem;
         margin-right: 3rem;
         margin-top: -1.2rem;
-        .acordeoncurso1{
-
+        .acordeoncurso4{
+            background-color: $color-principal1;
+            h2{
+                .boton2{
+                    background-color: $color-principal2;
+                    font-weight: bold
+                }
+            }
+        }
+        .acordeoncurso5{
+            @extend .acordeoncurso4;
+        }
+        .acordeoncurso6{
+            @extend .acordeoncurso4;
         }
     }
 }
@@ -218,29 +238,27 @@ footer{
             display: none;
         }
     }
-    
-    h2{
-        margin: auto;
-        width: 20%;
-        margin-top: 8%;
-        margin-bottom: 1%;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-        border: 2px solid;
-        border-radius: 0.8rem;
-    }
 
     .conocemasmain{
         div{
             .informacioncursos{
-                flex-direction: column;
-                gap: 2rem;
-                text-align: center;
+                p{
+                    text-align: center;
+                }
+            }
+            .acordeonconocemas1{
+                .acordeoncurso1{
+                    h2{
+                        .boton1{
+                            padding: auto;
+                        }
+                    }
+                }
             }
             .fechascursos{
-                flex-direction: column;
-                gap: 2rem;
-                text-align: center;
+                p{
+                    text-align: center;
+                }       
             }
         }
         
