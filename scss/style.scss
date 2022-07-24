@@ -43,6 +43,7 @@ header{
             text-align: center;
         }
     }
+    
 }
 
 /* Inicio page */
@@ -74,13 +75,21 @@ header{
 /* Producto Page */
 
 .productomain{
-    .imagenesproducto{
+    .contenedorproducto{
         display: flex;
-        margin: 1rem;
-        justify-content: space-around;
-        gap: 1rem;
         flex-wrap: wrap;
-    }   
+        padding: 0 4px;
+        .imagenesproductocolumna{
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+            img{
+                margin-top: 8px;
+                vertical-align: middle;
+                width: 100%;
+            }
+        }
+    }
 }
 
 
@@ -214,8 +223,7 @@ header{
     color: black;
 }
 footer{
-    padding-left: 20px;
-    margin-top: 30px;
+    margin-top: 1.5rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
@@ -293,7 +301,6 @@ footer{
         
     }
 
-
     .contactomain{
         flex-direction: column;
         align-items: center;
@@ -308,6 +315,14 @@ footer{
             }
         }
     }
+    .productomain{
+        .contenedorproducto{
+            .imagenesproductocolumna{
+                flex: 100%;
+                max-width: 100%
+            }
+        }
+    }
 }
 
 /* Version PC */
@@ -317,6 +332,7 @@ footer{
         .cajamenu{
             .navbar{
                 .itemsmenu{
+                    margin-left: 35%;
                     .linkmenu{
                         display: none;
                     }
