@@ -177,10 +177,10 @@ footer {
     .contactomain .formacontacto {
       margin-left: 7rem; }
     .contactomain .mapacontacto {
-      margin-right: 7rem; }
+      margin-right: 9rem; }
       .contactomain .mapacontacto .mapita {
-        height: 250px;
-        width: 300px; }
+        height: 200px;
+        width: 200px; }
   .productomain .contenedorproducto .imagenesproductocolumna {
     flex: 100%;
     max-width: 100%; }
