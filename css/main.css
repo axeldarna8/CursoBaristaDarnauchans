@@ -111,6 +111,15 @@ header .portada {
       .conocemasmain div .acordeonconocemas2 .acordeoncurso4 h2 .boton2, .conocemasmain div .acordeonconocemas2 .acordeoncurso5 h2 .boton2, .conocemasmain div .acordeonconocemas2 .acordeoncurso6 h2 .boton2 {
         background-color: #ab9d4f;
         font-weight: bold; }
+      .conocemasmain div .acordeonconocemas2 .acordeoncurso4 div div, .conocemasmain div .acordeonconocemas2 .acordeoncurso5 div div, .conocemasmain div .acordeonconocemas2 .acordeoncurso6 div div {
+        font-size: 1.5rem; }
+        .conocemasmain div .acordeonconocemas2 .acordeoncurso4 div div .fechasinicial, .conocemasmain div .acordeonconocemas2 .acordeoncurso5 div div .fechasinicial, .conocemasmain div .acordeonconocemas2 .acordeoncurso6 div div .fechasinicial, .conocemasmain div .acordeonconocemas2 .acordeoncurso4 div div .fechasintermedio, .conocemasmain div .acordeonconocemas2 .acordeoncurso5 div div .fechasintermedio, .conocemasmain div .acordeonconocemas2 .acordeoncurso6 div div .fechasintermedio, .conocemasmain div .acordeonconocemas2 .acordeoncurso4 div div .fechasavanzado, .conocemasmain div .acordeonconocemas2 .acordeoncurso5 div div .fechasavanzado, .conocemasmain div .acordeonconocemas2 .acordeoncurso6 div div .fechasavanzado {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around; }
+          .conocemasmain div .acordeonconocemas2 .acordeoncurso4 div div .fechasinicial a, .conocemasmain div .acordeonconocemas2 .acordeoncurso5 div div .fechasinicial a, .conocemasmain div .acordeonconocemas2 .acordeoncurso6 div div .fechasinicial a, .conocemasmain div .acordeonconocemas2 .acordeoncurso4 div div .fechasintermedio a, .conocemasmain div .acordeonconocemas2 .acordeoncurso5 div div .fechasintermedio a, .conocemasmain div .acordeonconocemas2 .acordeoncurso6 div div .fechasintermedio a, .conocemasmain div .acordeonconocemas2 .acordeoncurso4 div div .fechasavanzado a, .conocemasmain div .acordeonconocemas2 .acordeoncurso5 div div .fechasavanzado a, .conocemasmain div .acordeonconocemas2 .acordeoncurso6 div div .fechasavanzado a {
+            text-decoration: none;
+            color: black; }
 
 /*Color y ajuste del footer*/
 .volverArriba {
@@ -150,6 +159,8 @@ footer {
     padding: auto; }
   .conocemasmain div .fechascursos p {
     text-align: center; }
+  .conocemasmain div .acordeonconocemas2 .acordeoncurso4 div div, .conocemasmain div .acordeonconocemas2 .acordeoncurso5 div div, .conocemasmain div .acordeonconocemas2 .acordeoncurso6 div div {
+    font-size: 1rem; }
   .contactomain {
     flex-direction: column;
     align-items: center; }

@@ -178,6 +178,26 @@ header{
                     font-weight: bold
                 }
             }
+            div{
+                div{
+                    font-size: 1.5rem;
+                    .fechasinicial{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        a{
+                            text-decoration: none;
+                            color: black
+                        }
+                    }
+                    .fechasintermedio{
+                        @extend .fechasinicial;
+                    }
+                    .fechasavanzado{
+                        @extend .fechasinicial;
+                    }
+                }
+            }
         }
         .acordeoncurso5{
             @extend .acordeoncurso4;
@@ -259,6 +279,15 @@ footer{
                 p{
                     text-align: center;
                 }       
+            }
+            .acordeonconocemas2{
+                .acordeoncurso4{
+                    div{
+                        div{
+                            font-size: 1rem;
+                        }
+                    }
+                }
             }
         }
         
