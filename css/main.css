@@ -57,11 +57,11 @@ header .portada {
 /* Nosotros page */
 .paginanosotros {
   padding-bottom: 3rem; }
-  .paginanosotros div .cajatexto {
-    margin: 3rem;
+  .paginanosotros .container .cajatexto {
+    margin: 2rem;
     align-items: center;
     font-family: 'Nanum Gothic', sans-serif; }
-    .paginanosotros div .cajatexto .parrafo {
+    .paginanosotros .container .cajatexto .parrafo {
       font-size: 2rem; }
 
 /* Contacto page */
@@ -188,7 +188,7 @@ footer {
     height: 50%;
     width: 50%; }
   .paginanosotros .container .cajatexto .parrafo {
-    font-size: 1rem; } }
+    font-size: 0.7rem; } }
 
 /* Version PC */
 @media screen and (min-width: 1024px) {

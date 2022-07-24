@@ -97,9 +97,9 @@ header{
 
 .paginanosotros{
     padding-bottom: 3rem;
-    div{
+    .container{
         .cajatexto{
-            margin: 3rem;
+            margin: 2rem;
             align-items: center;
             font-family: 'Nanum Gothic', sans-serif;
             .parrafo{
@@ -340,7 +340,7 @@ footer{
                     width: 50%;
                 }
                 .parrafo{
-                    font-size: 1rem;
+                    font-size: 0.7rem;
                 }
             }
         }
