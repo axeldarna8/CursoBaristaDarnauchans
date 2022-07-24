@@ -103,8 +103,7 @@ header{
             align-items: center;
             font-family: 'Nanum Gothic', sans-serif;
             .parrafo{
-                font-size: 1rem; 
-                text-align: justify;
+                font-size: 2rem;   
             }
         }
     }
@@ -333,6 +332,19 @@ footer{
             }
         }
     }
+    .paginanosotros{
+        .container{
+            .cajatexto{
+                img{
+                    height: 50%;
+                    width: 50%;
+                }
+                .parrafo{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
 }
 
 /* Version PC */
@@ -380,8 +392,5 @@ footer{
             }
         }
     }
-    .paginanosotros div .cajatexto .parrafo{
-        font-size: 2rem;
-        text-align: justify;
-    }
+    
 }
