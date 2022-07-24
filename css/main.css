@@ -101,6 +101,8 @@ header .portada {
       .conocemasmain div .acordeonconocemas1 .acordeoncurso1 h2 .boton1, .conocemasmain div .acordeonconocemas1 .acordeoncurso2 h2 .boton1, .conocemasmain div .acordeonconocemas1 .acordeoncurso3 h2 .boton1 {
         background-color: #f6e68b;
         font-weight: bold; }
+      .conocemasmain div .acordeonconocemas1 .acordeoncurso1 h2 :focus, .conocemasmain div .acordeonconocemas1 .acordeoncurso2 h2 :focus, .conocemasmain div .acordeonconocemas1 .acordeoncurso3 h2 :focus {
+        box-shadow: none; }
   .conocemasmain div .fechascursos {
     font-weight: bold;
     flex-direction: row;
@@ -117,6 +119,8 @@ header .portada {
       .conocemasmain div .acordeonconocemas2 .acordeoncurso4 h2 .boton2, .conocemasmain div .acordeonconocemas2 .acordeoncurso5 h2 .boton2, .conocemasmain div .acordeonconocemas2 .acordeoncurso6 h2 .boton2 {
         background-color: #ab9d4f;
         font-weight: bold; }
+      .conocemasmain div .acordeonconocemas2 .acordeoncurso4 h2 :focus, .conocemasmain div .acordeonconocemas2 .acordeoncurso5 h2 :focus, .conocemasmain div .acordeonconocemas2 .acordeoncurso6 h2 :focus {
+        box-shadow: none; }
       .conocemasmain div .acordeonconocemas2 .acordeoncurso4 div div, .conocemasmain div .acordeonconocemas2 .acordeoncurso5 div div, .conocemasmain div .acordeonconocemas2 .acordeoncurso6 div div {
         font-size: 1.5rem; }
         .conocemasmain div .acordeonconocemas2 .acordeoncurso4 div div .fechasinicial, .conocemasmain div .acordeonconocemas2 .acordeoncurso5 div div .fechasinicial, .conocemasmain div .acordeonconocemas2 .acordeoncurso6 div div .fechasinicial, .conocemasmain div .acordeonconocemas2 .acordeoncurso4 div div .fechasintermedio, .conocemasmain div .acordeonconocemas2 .acordeoncurso5 div div .fechasintermedio, .conocemasmain div .acordeonconocemas2 .acordeoncurso6 div div .fechasintermedio, .conocemasmain div .acordeonconocemas2 .acordeoncurso4 div div .fechasavanzado, .conocemasmain div .acordeonconocemas2 .acordeoncurso5 div div .fechasavanzado, .conocemasmain div .acordeonconocemas2 .acordeoncurso6 div div .fechasavanzado {
@@ -171,11 +175,9 @@ footer {
     align-items: center; }
     .contactomain .formacontacto {
       margin-left: 7rem; }
-    .contactomain .mapacontacto {
-      margin-right: 7rem; }
-      .contactomain .mapacontacto .mapita {
-        height: 300px;
-        width: 300px; }
+    .contactomain .mapacontacto .mapita {
+      height: 300px;
+      width: 300px; }
   .productomain .contenedorproducto .imagenesproductocolumna {
     flex: 100%;
     max-width: 100%; } }

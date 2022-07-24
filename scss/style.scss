@@ -153,8 +153,12 @@ header{
             h2{
                 .boton1{
                     background-color: $color-principal1;
-                    font-weight: bold
+                    font-weight: bold;
                 }
+                :focus{
+                    box-shadow: none;
+                }
+                
             }
         }
         .acordeoncurso2{
@@ -185,6 +189,9 @@ header{
                 .boton2{
                     background-color: $color-principal2;
                     font-weight: bold
+                }
+                :focus{
+                    box-shadow: none;
                 }
             }
             div{
@@ -307,8 +314,7 @@ footer{
         .formacontacto{
             margin-left: 7rem;
         }
-        .mapacontacto{
-            margin-right: 7rem;
+        .mapacontacto{  
             .mapita{
                 height: 300px;
                 width: 300px;
